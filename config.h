@@ -64,18 +64,18 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function 		format          argument */
-	{ uptime,					"^c#81A1C1^  %s ",						    NULL},
-	{ ipv4,						"^c#BF616A^  %s ",       "enp24s0"},
-	{ kernel_release, "^c#A48EAD^  %s ",						 NULL},
-//	{ wifi_essid, 	"  %s-",					"wlp3s0"},
-//	{ wifi_perc,		"%s%% ",				"wlp3s0"},
-//{ uptime,				"	 	",							NULL	},
-//	{	battery_perc,	"   %s%% ",					"BAT0"},
-//	{ run_command,	"  %2	",									"tempcpu"},	
-	{	cpu_perc,			"^c#88C0D0^  %s%% ",							NULL},
-	{ ram_perc,			"^c#A48EAD^  %s%% ", 						NULL},
-	{ disk_perc, 		"^c#A3BE8C^  %s%% ", 						"/" },
-	{ datetime, 	  "^c#BF616A^  %s ",          		"%R"},
+	/* function 		 format          		 argument */
+	{ uptime,				 "^c#81A1C1^  %s ", NULL},
+	{ ipv4,					 "^c#BF616A^  %s ", "enp24s0"},
+	{ kernel_release,"^c#A48EAD^  %s ", NULL},
+//{ wifi_essid, 	"  %s-",					   "wlp3s0"},
+//{ wifi_perc,		"%s%% ",				     "wlp3s0"},
+//{ uptime,				"	 	",						 NULL	},
+//{	battery_perc,	"   %s%% ",				 "BAT0"},
+//{ run_command,	"  %2	",						 "tempcpu"},	
+	{	cpu_perc,			"^c#88C0D0^  %s%% ",NULL},
+	{ ram_perc,			"^c#A48EAD^  %s%% ",NULL},
+	{ disk_perc, 		"^c#A3BE8C^  %s%% ","/" },
+	{ datetime, 	  "^c#BF616A^  %s ",  "%R"},
 
 };
