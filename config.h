@@ -65,7 +65,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function 		 format          		 argument */
-	{ uptime,				 "^c#d000ff^  %s ", NULL},
+	{ uptime,				 "^c#d62976^  %s ", NULL},
 	{ ipv4,					 "^c#109ccc^  %s ", "enp24s0"},
 	{ kernel_release,"^c#ffe600^  %s ", NULL},
 //{ wifi_essid, 	"  %s-",					   "wlp3s0"},
@@ -75,7 +75,7 @@ static const struct arg args[] = {
 //{ run_command,	"  %2	",						 "tempcpu"},	
 	{	cpu_perc,			"^c#a64ae0^  %s%% ",NULL},
 	{ ram_perc,			"^c#a5e16e^  %s%% ",NULL},
-	{ disk_perc, 		"^c#5700ff^  %s%% ","/" },
+	{ disk_perc, 		"^c#4f5bd5^  %s%% ","/" },
 	{ datetime, 	  "^c#ff1355^  %s ",  "%R"},
 
 };
