@@ -65,17 +65,17 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function 		format          argument */
-	{ uptime,					"|  %s ",						    NULL },
-	{ ipv4,						"|  %s ",       "enp24s0"},
-	{ kernel_release, "|  %s ",						 NULL},
+	{ uptime,					"^c#81A1C1^  %s ",						    NULL},
+	{ ipv4,						"^c#BF616A^  %s ",       "enp24s0"},
+	{ kernel_release, "^c#A48EAD^  %s ",						 NULL},
 //	{ wifi_essid, 	"  %s-",					"wlp3s0"},
 //	{ wifi_perc,		"%s%% ",				"wlp3s0"},
 //{ uptime,				"	 	",							NULL	},
 //	{	battery_perc,	"   %s%% ",					"BAT0"},
 //	{ run_command,	"  %2	",									"tempcpu"},	
-	{	cpu_perc,			"|  %s%% ",							NULL},
-	{ ram_perc,			"|  %s%% ", 						NULL},
-	{ disk_perc, 		"|  %s%% ", 						"/" },
-	{ datetime, 	  "|  %s |",          		"%R"},
+	{	cpu_perc,			"^c#88C0D0^  %s%% ",							NULL},
+	{ ram_perc,			"^c#A48EAD^  %s%% ", 						NULL},
+	{ disk_perc, 		"^c#A3BE8C^  %s%% ", 						"/" },
+	{ datetime, 	  "^c#BF616A^  %s ",          		"%R"},
 
 };
