@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 2000;
+const unsigned int interval = 3000;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
@@ -67,7 +67,9 @@ static const struct arg args[] = {
 	/* function 		 format          		 argument */
 	{ uptime,				 "   %s  ", NULL},
 	{ ipv4,					 "   %s  ", "enp24s0"},
-	{ kernel_release,"   %s  ", NULL},
+	{	run_command,	 "  %s",    "echo '' "	}, 
+	{ run_command,	" %s  ", 		"awk '{if(NR==11) print $2}' /home/relow/.config/update.txt" },
+//{ kernel_release,"   %s  ", NULL},
 //{ wifi_essid, 	"  %s-",					   "wlp3s0"},
 //{ wifi_perc,		"%s%% ",				     "wlp3s0"},
 //{ uptime,				"	 	",						 NULL	},
@@ -76,5 +78,6 @@ static const struct arg args[] = {
 	{ ram_perc,			"   %s%%  ",NULL},
 	{ disk_free, 		"   %sB  ","/" },
 	{ datetime, 	  "   %s   ",  "%R"},
-
+	{	run_command,	 " %s",    "echo '' "	}, 
+	{	run_command,	 " %s  ",    "echo $USER "	}, 
 };
