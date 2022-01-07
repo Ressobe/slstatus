@@ -66,7 +66,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function 		 format          		 argument */
 	{ uptime,		 " [  %s ] ", 			 NULL},
-	{ wifi_essid, 	 	 " [   %s ] ",			 "wlan0"},
+	{ wifi_essid, 	 	 " [  %s ] ",			 "wlan0"},
 	{ disk_free, 		 " [  %sB ] ",		         "/" },
     { run_command,          " [ %s ] ",                            "r-battery.sh"},
 	{ datetime, 	         " [  %s ]",    		 "%R"}
