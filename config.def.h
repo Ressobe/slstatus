@@ -9,6 +9,14 @@ static const char unknown_str[] = "n/a";
 /* maximum output string length */
 #define MAXLEN 2048
 
+static const struct arg args[] = {
+	/* function 		 format          		 		 argument */
+	{ uptime,		 	 " ^c#98c379^  %s  ", 			 NULL},
+	{ ipv4, 	 	     " ^c#e5c07b^  %s  ",			 "enp24s0"},
+	{ disk_free, 		 " ^c#61afef^  %sB  ",		     "/" },
+	{ datetime, 	     " ^c#56B6C2^  %s ",    		 "%R"}
+};
+
 /*
  * function            description                     argument (example)
  *
@@ -63,11 +71,3 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
-static const struct arg args[] = {
-	/* function 		 format          		 argument */
-	{ uptime,		 " [  %s ] ", 			 NULL},
-	{ wifi_essid, 	 	 " [  %s ] ",			 "wlan0"},
-	{ disk_free, 		 " [  %sB ] ",		         "/" },
-    { run_command,          " [ %s ] ",                            "r-battery.sh"},
-	{ datetime, 	         " [  %s ]",    		 "%R"}
-};
